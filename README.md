@@ -1,16 +1,119 @@
-# tuco
+Toku App
 
-A new Flutter project.
+A Simple & Interactive Japanese Learning App built with Flutter
 
-## Getting Started
+Toku is a beginner-friendly Japanese learning application that helps users learn essential vocabulary through audio pronunciation and visual illustrations.
 
-This project is a starting point for a Flutter application.
+The app focuses on interactive learning using categorized vocabulary with native-style pronunciation sounds.
 
-A few resources to get you started if this is your first Flutter project:
+🌟 Overview
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Toku is structured into organized learning categories to make vocabulary memorization simple and effective.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The application currently includes:
+
+🔢 Numbers
+
+👨‍👩‍👧 Family Members
+
+🎨 Colors
+
+💬 Common Phrases
+
+Each item contains:
+
+English word
+
+Japanese translation
+
+Associated image (where applicable)
+
+Audio pronunciation
+
+✨ Key Features
+
+🎵 Play pronunciation audio using audioplayers
+
+🖼 Image-supported vocabulary learning
+
+📂 Categorized learning sections
+
+📱 Clean and responsive UI
+
+🎨 Custom gradient cards & modern UI styling
+
+🔊 One-tap sound playback
+
+🧱 Reusable components architecture
+
+⚡ Lightweight and fast performance
+
+🧠 Technical Implementation
+🔹 Audio Handling
+
+Implemented using audioplayers
+
+Audio loaded via AssetSource
+
+Separate model-based playback method inside:
+
+ItemModel
+
+ItemModelPhrases
+
+Independent AudioPlayer instance per playback
+
+🔹 Architecture Structure
+
+Model Layer:
+
+ItemModel
+
+ItemModelPhrases
+
+UI Components:
+
+Item
+
+ItemPhrases
+
+Category
+
+Screens:
+
+HomePage
+
+NumbersPage
+
+ColorsPage
+
+FamilyPage
+
+PhrasesPage
+
+Clean separation between:
+
+Data (Models)
+
+UI Components
+
+Screens
+
+Navigation Logic
+
+📂 Project Structure
+lib/
+ ├── component/
+ │    ├── item.dart
+ │    ├── item_phrases.dart
+ │    └── category.dart
+ ├── models/
+ │    ├── item_model.dart
+ │    └── model_phrases.dart
+ ├── screens/
+ │    ├── home_page.dart
+ │    ├── numbers_page.dart
+ │    ├── colors_page.dart
+ │    ├── family_page.dart
+ │    └── phrases_page.dart
+ └── main.dart
